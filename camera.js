@@ -17,4 +17,8 @@ var c=document.getElementById("canvas");
 c.width = video.width;
 c.height = video.height;
 var ctx =e.getContext("2d");
-ctx.drawImage(video, 0,0,640,480);}
+ctx.drawImage(video, 0,0,640,480);
+}
+
+video.addEventListener("touchstart",capteaza);
+video.addEventListener("mousedown", capteaza);
